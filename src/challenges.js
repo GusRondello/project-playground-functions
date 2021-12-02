@@ -20,17 +20,20 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
+function concatName(array) {
+  return array[array.length -1] + ", " + array[0];
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let pontuacao = 0;
+  pontuacao += (wins * 3) + ties;
+  return pontuacao
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  
 }
 
 // Desafio 7
