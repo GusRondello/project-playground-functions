@@ -14,6 +14,7 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
+//Metodo do '.split()' aprendido no https://www.w3schools.com/js/js_string_methods.asp
 function splitSentence(frase) {
   let array = frase.split(" ");
   return array;
@@ -32,9 +33,12 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
+let array = [9, 1, 2, 3, 9, 5, 7];
 function highestCount(array) {
-  
+  let maiorNumero = [];
+  return maiorNumero
 }
+console.log(highestCount(array))
 
 // Desafio 7
 function catAndMouse() {
