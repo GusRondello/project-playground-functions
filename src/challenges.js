@@ -2,6 +2,8 @@
 function compareTrue(p1, p2) {
   if (p1 === true && p2 === true) {
     return true;
+  }else {
+    return false
   }
 }
 
@@ -32,17 +34,15 @@ function footballPoints(wins, ties) {
 // Desafio 6
 // Metodo da '.sort() aprendido no https://www.w3schools.com/jsref/jsref_sort.asp
 function highestCount(array) {
-  let numeros = [];
+  let numeros = array.sort();
   let maiorNumero = [];
   for (let i = 0; i < array.length; i += 1) {
     if (array[i] >= 0) {
-      numeros = array.sort();
       if (array[i] >= numeros[numeros.length - 1]) {
         maiorNumero.push(array[i]);
       }
     }
     if (array[i] < 0) {
-      numeros = array.sort();
       if (array[i] >= numeros[0]) {
         maiorNumero.push(array[i]);
       }
