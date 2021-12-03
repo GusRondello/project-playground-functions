@@ -40,13 +40,13 @@ function highestCount(array) {
     if (array[i] >= 0){
       numeros = array.sort();
       if(array[i]  >= numeros[numeros.length - 1]){
-        maiorNumero += array[i];
+        maiorNumero.push(array[i]);
       }
     }
     if (array[i] < 0 ){
-      numeros = array;
-      if(array[i] >= numeros[numeros.length - 1]){
-      maiorNumero += array[i];
+      numeros = array.sort();
+      if(array[i] >= numeros[0]){
+      maiorNumero.push(array[i]);
       }
     }
   }
