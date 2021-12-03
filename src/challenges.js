@@ -3,9 +3,6 @@ function compareTrue(p1, p2) {
   if (p1 === true && p2 === true){
     return true;
   }
-  else{
-    return false;
-  }
 }
 
 // Desafio 2
@@ -14,7 +11,7 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-//Metodo do '.split()' aprendido no https://www.w3schools.com/js/js_string_methods.asp
+// Metodo do '.split()' aprendido no https://www.w3schools.com/js/js_string_methods.asp
 function splitSentence(frase) {
   let array = frase.split(" ");
   return array;
@@ -22,17 +19,18 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(array) {
-  return array[array.length -1] + ", " + array[0];
+  return array[array.length - 1] + ", " + array[0];
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let pontuacao = 0;
   pontuacao += (wins * 3) + ties;
-  return pontuacao
+  return pontuacao;
 }
 
 // Desafio 6
+// Metodo da '.sort() aprendido no https://www.w3schools.com/jsref/jsref_sort.asp
 function highestCount(array) {
   let numeros = [];
   let maiorNumero = [];
