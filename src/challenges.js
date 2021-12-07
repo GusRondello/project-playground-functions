@@ -67,16 +67,16 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(array) {
-  let arrayReturn = []
-  for (let i = 0; i < array.length; i += 1){
-    let elemento = array[i]
-    if (elemento % 3 === 0){
+  let arrayReturn = [];
+  for (let i = 0; i < array.length; i += 1) {
+    let elemento = array[i];
+    if (elemento % 3 === 0) {
       arrayReturn[i] = "fizz";
     }
-    if (elemento % 5 === 0){
+    if (elemento % 5 === 0) {
       arrayReturn[i] = "buzz";
     }
-    if (elemento % 3 === 0 && elemento % 5 === 0){
+    if (elemento % 3 === 0 && elemento % 5 === 0) {
       arrayReturn[i] = "fizzBuzz";
     }
     if (elemento % 3 !== 0 && elemento % 5 !== 0) {
@@ -90,21 +90,21 @@ function fizzBuzz(array) {
 function encode(string) {
   let stringArray = string.split("");
   let finalEncode = "";
-  for (let i = 0; i < stringArray.length; i += 1){
+  for (let i = 0; i < stringArray.length; i += 1) {
     let vogal = stringArray[i];
-    if (vogal === "a"){
+    if (vogal === "a") {
       stringArray[i] = 1;
     }
-    if (vogal === "e"){
+    if (vogal === "e") {
       stringArray[i] = 2;
     }
-    if (vogal === "i"){
+    if (vogal === "i") {
       stringArray[i] = 3;
     }
-    if (vogal === "o"){
+    if (vogal === "o") {
       stringArray[i] = 4;
     }
-    if (vogal === "u"){
+    if (vogal === "u") {
       stringArray[i] = 5;
     }
     finalEncode += stringArray[i];
@@ -114,22 +114,22 @@ function encode(string) {
 function decode(string) {
   let arrayString = string.split("");
   let finalDecode = "";
-  for (let i = 0; i < arrayString.length; i += 1){
+  for (let i = 0; i < arrayString.length; i += 1) {
     let numero = arrayString[i];
-    if (numero == 1){
+    if (numero == 1) {
       arrayString[i] = "a";
     }
-    if (numero == 2){
+    if (numero == 2) {
       arrayString[i] = "e";
     
     }
-    if (numero == 3){
+    if (numero == 3) {
       arrayString[i] = "i";
     }
-    if (numero == 4){
+    if (numero == 4) {
       arrayString[i] = "o";
     }
-    if (numero == 5){
+    if (numero == 5) {
       arrayString[i] = "u";
     }
     finalDecode += arrayString[i];
