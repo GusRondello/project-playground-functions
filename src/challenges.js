@@ -54,20 +54,36 @@ function highestCount(array) {
 // Desafio 7
 // "Math.abs()" aprendido em https://www.w3schools.com/js/js_math.asp
 function catAndMouse(mouse, cat1, cat2) {
-  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)){
-    return "cat1"
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return "cat1";
   }
-  if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)){
-    return "cat2"
+  if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
+    return "cat2";
   }
-  else{
-    return "os gatos trombam e o rato foge"
+  else {
+    return "os gatos trombam e o rato foge";
   }
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let arrayReturn = []
+  for (let i = 0; i < array.length; i += 1){
+    let elemento = array[i]
+    if (elemento % 3 === 0){
+      arrayReturn[i] = "fizz";
+    }
+    if (elemento % 5 === 0){
+      arrayReturn[i] = "buzz";
+    }
+    if (elemento % 3 === 0 && elemento % 5 === 0){
+      arrayReturn[i] = "fizzBuzz";
+    }
+    if (elemento % 3 !== 0 && elemento % 5 !== 0) {
+      arrayReturn[i] = "bug!";
+    }
+  }
+  return arrayReturn;
 }
 
 // Desafio 9
