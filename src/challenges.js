@@ -116,20 +116,20 @@ function decode(string) {
   let finalDecode = "";
   for (let i = 0; i < arrayString.length; i += 1) {
     let numero = arrayString[i];
-    if (numero == 1) {
+    if (numero === "1") {
       arrayString[i] = "a";
     }
-    if (numero == 2) {
+    if (numero === "2") {
       arrayString[i] = "e";
     
     }
-    if (numero == 3) {
+    if (numero === "3") {
       arrayString[i] = "i";
     }
-    if (numero == 4) {
+    if (numero === "4") {
       arrayString[i] = "o";
     }
-    if (numero == 5) {
+    if (numero === "5") {
       arrayString[i] = "u";
     }
     finalDecode += arrayString[i];
