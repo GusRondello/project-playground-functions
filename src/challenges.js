@@ -2,8 +2,8 @@
 function compareTrue(p1, p2) {
   if (p1 === true && p2 === true) {
     return true;
-  }else {
-    return false
+  } else {
+    return false;
   }
 }
 
@@ -15,19 +15,19 @@ function calcArea(base, height) {
 // Desafio 3
 // Metodo do '.split()' aprendido no https://www.w3schools.com/js/js_string_methods.asp
 function splitSentence(frase) {
-  let array = frase.split(" ");
+  let array = frase.split(' ');
   return array;
 }
 
 // Desafio 4
 function concatName(array) {
-  return array[array.length - 1] + ", " + array[0];
+  return array[array.length - 1] + ', ' + array[0];
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let pontuacao = 0;
-  pontuacao += (wins * 3) + ties;
+  pontuacao += wins * 3 + ties;
   return pontuacao;
 }
 
@@ -55,13 +55,12 @@ function highestCount(array) {
 // "Math.abs()" aprendido em https://www.w3schools.com/js/js_math.asp
 function catAndMouse(mouse, cat1, cat2) {
   if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
-    return "cat1";
+    return 'cat1';
   }
   if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
-    return "cat2";
-  }
-  else {
-    return "os gatos trombam e o rato foge";
+    return 'cat2';
+  } else {
+    return 'os gatos trombam e o rato foge';
   }
 }
 
@@ -71,16 +70,16 @@ function fizzBuzz(array) {
   for (let i = 0; i < array.length; i += 1) {
     let elemento = array[i];
     if (elemento % 3 === 0) {
-      arrayReturn[i] = "fizz";
+      arrayReturn[i] = 'fizz';
     }
     if (elemento % 5 === 0) {
-      arrayReturn[i] = "buzz";
+      arrayReturn[i] = 'buzz';
     }
     if (elemento % 3 === 0 && elemento % 5 === 0) {
-      arrayReturn[i] = "fizzBuzz";
+      arrayReturn[i] = 'fizzBuzz';
     }
     if (elemento % 3 !== 0 && elemento % 5 !== 0) {
-      arrayReturn[i] = "bug!";
+      arrayReturn[i] = 'bug!';
     }
   }
   return arrayReturn;
@@ -88,23 +87,23 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(string) {
-  let stringArray = string.split("");
-  let finalEncode = "";
+  let stringArray = string.split('');
+  let finalEncode = '';
   for (let i = 0; i < stringArray.length; i += 1) {
     let vogal = stringArray[i];
-    if (vogal === "a") {
+    if (vogal === 'a') {
       stringArray[i] = 1;
     }
-    if (vogal === "e") {
+    if (vogal === 'e') {
       stringArray[i] = 2;
     }
-    if (vogal === "i") {
+    if (vogal === 'i') {
       stringArray[i] = 3;
     }
-    if (vogal === "o") {
+    if (vogal === 'o') {
       stringArray[i] = 4;
     }
-    if (vogal === "u") {
+    if (vogal === 'u') {
       stringArray[i] = 5;
     }
     finalEncode += stringArray[i];
@@ -112,25 +111,24 @@ function encode(string) {
   return finalEncode;
 }
 function decode(string) {
-  let arrayString = string.split("");
-  let finalDecode = "";
+  let arrayString = string.split('');
+  let finalDecode = '';
   for (let i = 0; i < arrayString.length; i += 1) {
     let numero = arrayString[i];
-    if (numero === "1") {
-      arrayString[i] = "a";
+    if (numero === '1') {
+      arrayString[i] = 'a';
     }
-    if (numero === "2") {
-      arrayString[i] = "e";
-    
+    if (numero === '2') {
+      arrayString[i] = 'e';
     }
-    if (numero === "3") {
-      arrayString[i] = "i";
+    if (numero === '3') {
+      arrayString[i] = 'i';
     }
-    if (numero === "4") {
-      arrayString[i] = "o";
+    if (numero === '4') {
+      arrayString[i] = 'o';
     }
-    if (numero === "5") {
-      arrayString[i] = "u";
+    if (numero === '5') {
+      arrayString[i] = 'u';
     }
     finalDecode += arrayString[i];
   }
